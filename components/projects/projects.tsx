@@ -6,7 +6,7 @@ import LinkButton from '../link/link'
 
 const styles = css`
   .projects {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 10px;
   }
 
@@ -25,17 +25,17 @@ const styles = css`
 
   .project {
     display: flex;
-    border-radius: 20px;
+    border-radius: 10px;
     align-items: center;
     justify-content: space-between;
     padding: 17px 20px;
     width: 100%;
     box-shadow: 0 0 10px #c9c9c9;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .project img {
-    border-radius: 10px;
+    border-radius: 6px;
     height: 70px;
     width: 70px;
     margin-right: 20px;
@@ -91,7 +91,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div>
-                  <LinkButton href={link}>Go to project</LinkButton>
+                  <LinkButton href={link}>Open</LinkButton>
                 </div>
               </div>
             )

@@ -2,13 +2,14 @@ import { css } from 'cssed/macro'
 
 const styles = css`
   .info {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 10px;
   }
 
   .title {
     font-weight: 500;
     font-size: 25px;
+    margin-bottom: 15px;
   }
 
   .items {
@@ -32,7 +33,6 @@ const OtherInfo = () => (
   <div className={styles.info}>
     <h2 className={styles.title}>ℹ️️&nbsp;Other info</h2>
     <div className={styles.items}>
-      <br />
       <div>
         🏆 &nbsp;Contributor in crypto projects and an active participant in
         non-commercial volunteer projects.

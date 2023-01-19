@@ -9,6 +9,7 @@ const styles = css`
   .title {
     font-weight: 500;
     font-size: 25px;
+    margin-bottom: 15px;
   }
 
   .items {
@@ -18,7 +19,7 @@ const styles = css`
   .items div {
     font-size: 18px;
     font-weight: 400;
-    margin: 5px 0;
+    margin: 3px 0;
   }
 
   .items div span {

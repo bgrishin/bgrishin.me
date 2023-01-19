@@ -2,7 +2,7 @@ import { css } from 'cssed/macro'
 
 const styles = css`
   .technicalSkills {
-    margin-top: 40px;
+    margin-top: 15px;
     margin-left: 10px;
   }
 
