@@ -41,7 +41,7 @@ const LinkButton: FC<{ href: string; children: string }> = ({
   href,
   children
 }) => (
-  <a href={href} className={styles.link} target={'_blank'}>
+  <a href={href} className={styles.link} target={'_blank'} rel="noreferrer">
     <RedirectIcon />
     <span>{children}</span>
   </a>

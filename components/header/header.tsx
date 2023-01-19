@@ -73,16 +73,16 @@ const Header: FC = () => (
         <div className={styles.name}>Bogdan Grishin</div>
         <div className={styles.description}>Full-Stack NodeJS Developer</div>
         <div className={styles.links}>
-          <a href={Links.github} target={'_blank'}>
+          <a href={Links.github} target={'_blank'} rel="noreferrer">
             <GithubIcon />
           </a>
-          <a href={Links.linkedIn} target={'_blank'}>
+          <a href={Links.linkedIn} target={'_blank'} rel="noreferrer">
             <LinkedInIcon />
           </a>
-          <a href={Links.telegram} target={'_blank'}>
+          <a href={Links.telegram} target={'_blank'} rel="noreferrer">
             <TelegramIcon />
           </a>
-          <a href={Links.mailTo} target={'_blank'}>
+          <a href={Links.mailTo} target={'_blank'} rel="noreferrer">
             <EmailIcon />
           </a>
         </div>
