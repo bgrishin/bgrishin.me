@@ -34,7 +34,7 @@ const OtherInfo = () => (
     <h2 className={styles.title}>ℹ️️&nbsp;Other info</h2>
     <div className={styles.items}>
       <div>
-        🏆 &nbsp;Contributor in crypto projects and an active participant in
+        🏆 &nbsp;Contributor in crypto & AI projects and an active participant in
         non-commercial volunteer projects.
       </div>
       <br />

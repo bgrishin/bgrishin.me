@@ -43,16 +43,24 @@ const Info = () => (
       <div>
         ⏳ &nbsp;Years of experience:{' '}
         <span>
-          {new Date(Date.now() - +new Date(2021, 12, 1)).getFullYear() - 1970}{' '}
+          1.5{' '}
           year(s) of commercial experience
         </span>
       </div>
       <div>
-        🇬🇧 &nbsp;Languages: <span>English, Russian, Ukrainian</span>
+        🇬🇧 &nbsp;Languages: <span>English (B2), Russian (Native), Ukrainian (Native)</span>
       </div>
       <div>
         🐣 &nbsp;Birthday: <span>2007, 5 of May</span>
       </div>
+      <br />
+      <div>
+        💻 &nbsp;Currently coding on <span>MacBook Air M1 2020</span>
+      </div>
+      <br />
+      {/*<div>*/}
+      {/*  📞 &nbsp;Contact me via email <span>bogdan.grishin.2007@gmail.com</span> or Telegram{' '}<span>@quartz555</span>*/}
+      {/*</div>*/}
     </div>
   </div>
 )

@@ -40,22 +40,23 @@ const TechnicalSkills = () => (
         🌈 &nbsp;Front-end:{' '}
         <span>
           HTML/CSS/JS, React, Typescript, NextJS, Redux, {'<canvas>'}, JQuery,
-          @grammarly/focal (reactive state), Bootstrap
+          @grammarly/focal (reactive state), Bootstrap, Vite
         </span>
       </div>
       <div>
         🎛️ &nbsp;Back-end:{' '}
         <span>
           Express, NestJS, Socket.IO (web sockets), SQL Databases (MySQL,
-          PostgreSQL), NoSQL Databases (Redis, MongoDB), Pug, AWS, Docker &
+          PostgreSQL), NoSQL Databases (Redis, MongoDB), Pug, EJS, AWS (S3, EC2, RDS, Cognito, Lambda), Docker &
           Docker Compose, Caddy, Chat-bot Development, Telegram User Bots
-          (MTProto) TypeORM, Auth (jwt, passport etc.)
+          (MTProto) TypeORM, Auth (jwt, passport etc.), OpenAPI (Swagger),
+          Sequelize, TypeORM, Prisma, Fastify
         </span>
       </div>
       <div>
-        📗 &nbsp;Other:{' '}
+        📗 &nbsp;Common skills:{' '}
         <span>
-          Git, Cron, RxJS (reactive programming), ESLint, prettier, puppeteer
+          Git, Cron, RxJS (reactive programming), ESLint, prettier, puppeteer, OpenAI API, Google APIs, SOLID, MVC, OOP, Linux, Jira
         </span>
       </div>
     </div>
