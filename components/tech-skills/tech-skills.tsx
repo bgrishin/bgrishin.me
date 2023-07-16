@@ -46,7 +46,7 @@ const TechnicalSkills = () => (
       <div>
         🎛️ &nbsp;Back-end:{' '}
         <span>
-          Express, NestJS, Socket.IO (web sockets), SQL Databases (MySQL,
+          Express, NestJS, Socket.IO & Web sockets, SQL Databases (MySQL,
           PostgreSQL), NoSQL Databases (Redis, MongoDB), Pug, EJS, AWS Services, Docker &
           Docker Compose, Caddy, Chat-bot Development, Telegram User Bots
           (MTProto) TypeORM, Auth (jwt, passport, basic etc.), OpenAPI (Swagger),
