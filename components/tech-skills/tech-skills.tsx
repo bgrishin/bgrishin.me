@@ -50,13 +50,13 @@ const TechnicalSkills = () => (
           PostgreSQL), NoSQL Databases (Redis, MongoDB), Pug, EJS, AWS Services, Docker &
           Docker Compose, Caddy, Chat-bot Development, Telegram User Bots
           (MTProto) TypeORM, Auth (jwt, passport, basic etc.), OpenAPI (Swagger),
-          Sequelize, TypeORM, Prisma, Fastify, Linux, SSH, Bash, DevOps, Certbot, Nginx
+          Sequelize, TypeORM, Prisma, Fastify, Linux, SSH, Bash, DevOps, Certbot, Nginx, Event sourcing / CQRS, E2E tests (Jest)
         </span>
       </div>
       <div>
         📗 &nbsp;Common skills:{' '}
         <span>
-          Git, Cron, RxJS (reactive programming), ESLint, prettier, puppeteer, OpenAI API, Google APIs, SOLID, MVC, OOP, Jira, Can close Vim 😁
+          Git, Cron, RxJS (reactive programming), ESLint, prettier, puppeteer, OpenAI API, Google APIs, SOLID, MVC, OOP, Jira, Slack, Figma, Can close Vim 😁
         </span>
       </div>
     </div>

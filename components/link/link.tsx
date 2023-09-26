@@ -8,11 +8,11 @@ const styles = css`
     color: white;
     background: #0080ff;
     padding: 7px 20px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 17px;
-    letter-spacing: -0.3px;
-    border-radius: 100px;
-    box-shadow: 3px 3px 20px 3px #2a2a2a45;
+    letter-spacing: -0.1px;
+    border-radius: 10px;
+    /*box-shadow: 3px 3px 20px 3px #2a2a2a45;*/
     transition: 0.2s;
     display: flex;
     align-items: center;

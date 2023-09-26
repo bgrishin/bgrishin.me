@@ -43,7 +43,7 @@ const Info = () => (
       <div>
         ⏳ &nbsp;Years of experience:{' '}
         <span>
-          1.5{' '}
+          2{' '}
           year(s) of commercial experience
         </span>
       </div>
@@ -56,6 +56,10 @@ const Info = () => (
       <br />
       <div>
         💻 &nbsp;Currently coding on <span>MacBook Air M1 2020</span>
+      </div>
+      <br />
+      <div>
+        ⏭️ &nbsp;In plans or in development: <span>Full-stack chat application, AI Experiments, Blockchain experiments (maybe)</span>
       </div>
       <br />
       {/*<div>*/}
