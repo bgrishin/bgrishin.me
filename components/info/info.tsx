@@ -55,7 +55,7 @@ const Info = () => (
       {/*</div>*/}
       <br />
       <div>
-        💻 &nbsp;Currently coding on <span>MacBook Air M1 2020</span>
+        💻 &nbsp;Currently coding on <span>Macbook Pro M2 Pro 2023</span>
       </div>
       <br />
       <div>
