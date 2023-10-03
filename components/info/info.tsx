@@ -50,9 +50,9 @@ const Info = () => (
       <div>
         🇬🇧 &nbsp;Languages: <span>English (B2), Russian (Native), Ukrainian (Native)</span>
       </div>
-      <div>
-        🐣 &nbsp;Birthday: <span>2007, 5 of May</span>
-      </div>
+      {/*<div>*/}
+      {/*  🐣 &nbsp;Birthday: <span>2007, 5 of May</span>*/}
+      {/*</div>*/}
       <br />
       <div>
         💻 &nbsp;Currently coding on <span>MacBook Air M1 2020</span>
