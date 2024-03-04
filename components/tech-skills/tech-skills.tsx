@@ -73,8 +73,10 @@ const TechnicalSkills = () => (
         <span className={styles.badges}>
           {`HTML/CSS/JS, ReactJS, Typescript, NextJS, Redux, JQuery, @grammarly/focal (reactive state), Bootstrap, ViteJS, SolidJS, Canvas Drawing, Tailwind`
             .split(', ')
-            .map((x) => (
-              <span className={styles.badge}>{x}</span>
+            .map((x, i) => (
+              <span className={styles.badge} key={i}>
+                {x}
+              </span>
             ))}
         </span>
       </div>
@@ -89,8 +91,10 @@ const TechnicalSkills = () => (
           DevOps, Certbot, Nginx, Event sourcing / CQRS, E2E tests (Jest), BullMQ`
             .replaceAll('\n', '')
             .split(', ')
-            .map((x) => (
-              <span className={styles.badge}>{x}</span>
+            .map((x, i) => (
+              <span className={styles.badge} key={i}>
+                {x}
+              </span>
             ))}
         </span>
       </div>
@@ -102,8 +106,10 @@ const TechnicalSkills = () => (
           OpenAI API, Google APIs, SOLID, Jira, Slack, Figma, Postman`
           .replaceAll('\n', '')
           .split(', ')
-          .map((x) => (
-            <span className={styles.badge}>{x}</span>
+          .map((x, i) => (
+            <span className={styles.badge} key={i}>
+              {x}
+            </span>
           ))}
       </span>
     </div>
