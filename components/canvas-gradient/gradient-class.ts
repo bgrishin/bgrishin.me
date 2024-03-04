@@ -23,16 +23,12 @@ class Gradient {
   private window: Window
 
   private stopAColor: Color[] = [
-    { r: 69, g: 104, b: 220 },
-    { r: 238, g: 9, b: 121 },
-    { r: 244, g: 196, b: 243 },
-    { r: 255, g: 0, b: 204 }
+    { r: 29, g: 151, b: 108 },
+    { r: 52, g: 143, b: 80 }
   ]
   private stopBColor: Color[] = [
-    { r: 176, g: 106, b: 179 },
-    { r: 255, g: 106, b: 0 },
-    { r: 252, g: 103, b: 250 },
-    { r: 51, g: 51, b: 153 }
+    { r: 147, g: 249, b: 185 },
+    { r: 15, g: 155, b: 15 }
   ]
 
   private width: number

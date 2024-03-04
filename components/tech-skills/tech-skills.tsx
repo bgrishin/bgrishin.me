@@ -3,7 +3,7 @@ import { css } from 'cssed/macro'
 const styles = css`
   .title {
     font-weight: 400;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
     font-size: 25px;
     text-align: center;
     user-select: none;
