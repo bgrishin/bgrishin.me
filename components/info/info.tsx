@@ -1,9 +1,16 @@
 import { css } from 'cssed/macro'
+import { FC } from 'react'
 
 const styles = css`
+  .infoWrap {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
   .info {
-    margin-top: 40px;
-    margin-left: 10px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
   }
 
   .title {
@@ -27,44 +34,88 @@ const styles = css`
   }
 
   @media screen and (max-width: 900px) {
-    .items {
-      margin-left: 16px;
+    .info {
+      flex-wrap: wrap;
+      padding: 0 10px;
     }
+  }
+
+  @media screen and (max-width: 1040px) {
+    .languages {
+      flex-wrap: wrap;
+    }
+  }
+
+  .infoBlock {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    transition: 0.2s;
+  }
+
+  .infoBlock:hover {
+    border: 1px solid black;
+  }
+
+  .infoBlock .content .label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+
+  .infoBlock .icon {
+    font-size: 40px;
+    margin-right: 10px;
+  }
+
+  .infoBlock .text {
+    font-size: 14px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 `
 
+const InfoBlock: FC<{
+  icon?: string
+  label: string
+  info: string
+}> = ({ icon, label, info }) => (
+  <div className={styles.infoBlock}>
+    <div className={styles.icon}>{icon}</div>
+    <div className={styles.content}>
+      <div className={styles.label}>{label}</div>
+      <div className={styles.text}>{info}</div>
+    </div>
+  </div>
+)
+
 const Info = () => (
-  <div className={styles.info}>
-    <h2 className={styles.title}>📝️&nbsp;Short info</h2>
-    <div className={styles.items}>
-      <div>
-        🌎 &nbsp;Location: <span>Flexible</span>
-      </div>
-      <div>
-        ⏳ &nbsp;Years of experience:{' '}
-        <span>
-          2{' '}
-          year(s) of commercial experience
-        </span>
-      </div>
-      <div>
-        🇬🇧 &nbsp;Languages: <span>English (B2), Russian (Native), Ukrainian (Native)</span>
-      </div>
-      {/*<div>*/}
-      {/*  🐣 &nbsp;Birthday: <span>2007, 5 of May</span>*/}
-      {/*</div>*/}
-      <br />
-      <div>
-        💻 &nbsp;Currently coding on <span>Macbook Pro M2 Pro 2023</span>
-      </div>
-      <br />
-      <div>
-        ⏭️ &nbsp;In plans or in development: <span>Full-stack chat application, AI Experiments, Blockchain experiments (maybe)</span>
-      </div>
-      <br />
-      {/*<div>*/}
-      {/*  📞 &nbsp;Contact me via email <span>bogdan.grishin.2007@gmail.com</span> or Telegram{' '}<span>@quartz555</span>*/}
-      {/*</div>*/}
+  <div className={styles.infoWrap}>
+    <div className={styles.info}>
+      <InfoBlock icon={'🌎'} label={'Location'} info={'Warsaw, Poland'} />
+      <InfoBlock
+        icon={'⏳'}
+        label={'Years of Experience'}
+        info={'2 years of commercial experience'}
+      />
+      <InfoBlock
+        icon={'💻'}
+        label={'Currently Coding on'}
+        info={'Macbook Pro 14" M2 Pro 2023'}
+      />
+    </div>
+    <div className={`${styles.info} ${styles.languages}`}>
+      <InfoBlock label={'Ukrainian'} info={'Native'} />
+      <InfoBlock label={'English'} info={'B2 (Upper Intermediate)'} />
+      <InfoBlock label={'Polish'} info={'A2 (Elementary)'} />
+      <InfoBlock label={'Russian'} info={'Native'} />
     </div>
   </div>
 )

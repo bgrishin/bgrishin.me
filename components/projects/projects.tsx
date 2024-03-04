@@ -1,18 +1,17 @@
 import { css } from 'cssed/macro'
 import { useEffect, useState } from 'react'
-import Loading from '../loading/loading'
 import { Project } from '../../common/types/project.interface'
-import LinkButton from '../link/link'
+import Loading from '../loading/loading'
 
 const styles = css`
   .projects {
     margin-top: 20px;
-    margin-left: 10px;
   }
 
   .title {
     font-weight: 500;
     font-size: 25px;
+    text-align: center;
   }
 
   .items {
@@ -25,19 +24,35 @@ const styles = css`
 
   .project {
     display: flex;
-    border-radius: 10px;
+    border-radius: 7px;
     align-items: center;
     justify-content: space-between;
     padding: 17px 20px;
     width: 100%;
     box-shadow: 0 0 10px #c9c9c9;
     margin-bottom: 15px;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .project:hover {
+    outline: 2px solid #1266c7;
   }
 
   .project img {
-    border-radius: 6px;
+    border-radius: 4px;
     height: 70px;
     width: 70px;
+    margin-right: 20px;
+  }
+
+  .project .icon {
+    border-radius: 4px;
+    font-size: 50px;
+    width: 70px;
+    text-align: center;
     margin-right: 20px;
   }
 
@@ -49,6 +64,12 @@ const styles = css`
 
   .nameBlock {
     width: 100%;
+  }
+
+  @media screen and (max-width: 900px) {
+    .items {
+      padding: 0 10px;
+    }
   }
 `
 
@@ -64,6 +85,10 @@ const Projects = () => {
     fetchProjects()
   }, [])
 
+  const isValidUrl = (urlString: string) => {
+    return urlString.startsWith('https:') || urlString.startsWith('/')
+  }
+
   return (
     <div className={styles.projects}>
       <h2 className={styles.title}>️️📚 Projects</h2>
@@ -78,10 +103,16 @@ const Projects = () => {
                   color: textColor
                 }}
                 key={i}
+                title={'Click to open in new tab'}
+                onClick={() => window.open(link, '_blank')}
               >
-                {imageURL ? (
+                {imageURL && isValidUrl(imageURL) ? (
                   <div>
                     <img src={imageURL} alt={'Project image.'} />
+                  </div>
+                ) : imageURL ? (
+                  <div>
+                    <div className={styles.icon}>{imageURL}</div>
                   </div>
                 ) : null}
                 <div className={styles.nameBlock}>
@@ -89,9 +120,6 @@ const Projects = () => {
                   <div style={{ fontSize: 16, color: '#9b9b9b' }}>
                     {description}
                   </div>
-                </div>
-                <div>
-                  <LinkButton href={link}>Open</LinkButton>
                 </div>
               </div>
             )

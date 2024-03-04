@@ -1,17 +1,20 @@
-import { FC } from 'react'
 import { css } from 'cssed/macro'
 import Head from 'next/head'
+import { FC } from 'react'
 import CanvasGradient from '../components/canvas-gradient/canvas-gradient'
+import Footer from '../components/footer/footer'
 import Header from '../components/header/header'
-import TechnicalSkills from '../components/tech-skills/tech-skills'
 import Info from '../components/info/info'
 import OtherInfo from '../components/other-info/other-info'
 import Projects from '../components/projects/projects'
-import Footer from '../components/footer/footer'
+import TechnicalSkills from '../components/tech-skills/tech-skills'
 
 const styles = css`
   .content {
     padding: 0 20%;
+    position: relative;
+    top: -80px;
+    z-index: 3;
   }
 
   @media screen and (max-width: 900px) {

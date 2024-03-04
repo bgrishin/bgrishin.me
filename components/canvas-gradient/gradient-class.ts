@@ -11,7 +11,7 @@ interface ColorStop {
 
 const Anim = {
   //animation settings
-  duration: 1000,
+  duration: 5000,
   interval: 10,
   stepUnit: 1,
   currUnit: 0
@@ -23,16 +23,16 @@ class Gradient {
   private window: Window
 
   private stopAColor: Color[] = [
-    { r: 9, g: 117, b: 190 }, //blue
-    { r: 59, g: 160, b: 89 }, //green
-    { r: 230, g: 192, b: 39 }, //yellow
-    { r: 238, g: 30, b: 77 } //red
+    { r: 69, g: 104, b: 220 },
+    { r: 238, g: 9, b: 121 },
+    { r: 244, g: 196, b: 243 },
+    { r: 255, g: 0, b: 204 }
   ]
   private stopBColor: Color[] = [
-    { r: 205, g: 24, b: 75 }, //pink
-    { r: 33, g: 98, b: 155 }, //blue
-    { r: 64, g: 149, b: 69 }, //green
-    { r: 228, g: 171, b: 33 } //yellow
+    { r: 176, g: 106, b: 179 },
+    { r: 255, g: 106, b: 0 },
+    { r: 252, g: 103, b: 250 },
+    { r: 51, g: 51, b: 153 }
   ]
 
   private width: number

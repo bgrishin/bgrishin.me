@@ -15,12 +15,17 @@ const styles = css`
     width: 100%;
     top: 0;
     height: 200px;
-    background: radial-gradient(
-      77% 166% at center -50%,
-      transparent 40%,
-      rgba(255, 255, 255, 1) 90%
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 1)
     );
     z-index: 3;
+  }
+
+  .canvasWrap {
+    margin-bottom: 30px;
   }
 `
 

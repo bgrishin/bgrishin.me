@@ -1,46 +1,48 @@
 import { css } from 'cssed/macro'
 import { FC } from 'react'
 import { Links } from '../../common/types/links.enum'
-import {
-  EmailIcon,
-  GithubIcon,
-  LinkedInIcon,
-  TelegramIcon
-} from '../icons/icons'
+import { RedirectIcon } from '../icons/icons'
 import LinkButton from '../link/link'
 
 const styles = css`
   .image {
-    height: 75px;
-    width: 75px;
-    border-radius: 50%;
-    background-size: cover;
-    margin-right: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    display: block;
+    border: 3px solid white;
+  }
+
+  .imageWrap {
+    position: relative;
+    margin-bottom: 5px;
   }
 
   .header {
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #d5d5d5;
-    padding-bottom: 50px;
+    flex-direction: column;
   }
 
   .nameBlock {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-left: 10px;
+    margin-bottom: 20px;
   }
 
   .name {
     font-weight: 700;
     font-size: 30px;
     letter-spacing: -0.5px;
+    margin-bottom: 5px;
   }
 
   .description {
     font-size: 20px;
-    color: #6e6e6e;
+    color: #000000;
   }
 
   .links {
@@ -59,37 +61,35 @@ const styles = css`
   .links svg:hover {
     fill: #8c8b8b;
   }
+
+  .contactMeBlock {
+    display: flex;
+    gap: 5px;
+  }
 `
 
 const Header: FC = () => (
   <div className={styles.header}>
     <div className={styles.nameBlock}>
-      <img
-        className={styles.image}
-        src={'/../../images/bio/me.jpeg'}
-        alt={'Just me'}
-      />
+      <div className={styles.imageWrap}>
+        <img
+          className={styles.image}
+          src={'/../../images/bio/me.jpeg'}
+          alt={'Just me'}
+        />
+      </div>
       <div>
         <div className={styles.name}>Bogdan Grishin</div>
         <div className={styles.description}>Full-Stack NodeJS Developer</div>
-        <div className={styles.links}>
-          <a href={Links.github} target={'_blank'} rel="noreferrer">
-            <GithubIcon />
-          </a>
-          <a href={Links.linkedIn} target={'_blank'} rel="noreferrer">
-            <LinkedInIcon />
-          </a>
-          <a href={Links.telegram} target={'_blank'} rel="noreferrer">
-            <TelegramIcon />
-          </a>
-          <a href={Links.mailTo} target={'_blank'} rel="noreferrer">
-            <EmailIcon />
-          </a>
-        </div>
       </div>
     </div>
     <div className={styles.contactMeBlock}>
-      <LinkButton href={Links.linkedIn}>Contact me</LinkButton>
+      <LinkButton href={Links.cv} secondary={true}>
+        CV
+      </LinkButton>
+      <LinkButton href={Links.mailTo} icon={<RedirectIcon />}>
+        Contact me
+      </LinkButton>
     </div>
   </div>
 )
