@@ -103,7 +103,7 @@ const Info = () => (
       <InfoBlock
         icon={'⏳'}
         label={'Years of Experience'}
-        info={'2 years of commercial experience'}
+        info={'2.5 years of commercial experience'}
       />
       <InfoBlock
         icon={'💻'}
