@@ -71,7 +71,7 @@ const TechnicalSkills = () => (
       <div className={styles.category}>
         <h2>🌈 Front-end</h2>
         <span className={styles.badges}>
-          {`HTML/CSS/JS, ReactJS, Typescript, NextJS, Redux, JQuery, @grammarly/focal (reactive state), Bootstrap, ViteJS, SolidJS, Canvas Drawing, Tailwind`
+          {`HTML/CSS/JS, ReactJS, Typescript, NextJS, Redux, JQuery, @grammarly/focal (reactive state), Bootstrap CSS, ViteJS, SolidJS, Canvas Drawing (charts,graphs,etc.), Tailwind CSS, React Hook Form`
             .split(', ')
             .map((x, i) => (
               <span className={styles.badge} key={i}>
@@ -83,12 +83,11 @@ const TechnicalSkills = () => (
       <div className={styles.category}>
         <h2>🎛️ Back-end</h2>
         <span className={styles.badges}>
-          {`Express, NestJS, Socket.IO & Web sockets, SQL Databases (MySQL，
-          PostgreSQL), NoSQL Databases (Redis，MongoDB), Pug, EJS, AWS Services,
-          Docker & Docker Compose, Caddy, Chat-bot Development, Telegram User
-          Bots (MTProto), TypeORM, Auth (jwt，passport，basic etc.), OpenAPI
+          {`Express, NestJS, Socket.IO & Web sockets, SQL Databases (MySQL,PostgreSQL), NoSQL Databases (Redis，MongoDB), Pug, EJS, Firebase,
+          Docker & Docker Compose, Caddy, Chat-bot Development (telegram,whatsapp,slack,etc.), Telegram User
+          Bots (MTProto), TypeORM, Auth (jwt,passport,basic etc.), Auth0, OpenAPI
           (Swagger), Sequelize, TypeORM, Prisma, Fastify, Linux, SSH, Bash,
-          DevOps, Certbot, Nginx, Event sourcing / CQRS, E2E tests (Jest), BullMQ`
+          Certbot, Nginx, Event sourcing / CQRS, E2E tests (Jest), BullMQ (and Bull board), Redis caching, AWS Lambdas, AWS EC2, AWS RDS, AWS SNS & SES, AWS Cognito, AWS S3, Cloudflare`
             .replaceAll('\n', '')
             .split(', ')
             .map((x, i) => (
@@ -102,8 +101,8 @@ const TechnicalSkills = () => (
     <div className={styles.category}>
       <h2>📗 Common skills</h2>
       <span className={styles.badges}>
-        {`Git, RxJS (reactive programming), puppeteer,
-          OpenAI API, Google APIs, SOLID, Jira, Slack, Figma, Postman`
+        {`Git, RxJS (reactive programming), puppeteer (web scraping),
+          OpenAI API, Solana WEB3, Google APIs, Jira, Slack, Figma, Postman, OCR text recognition using OpenAI on AWS lambda function`
           .replaceAll('\n', '')
           .split(', ')
           .map((x, i) => (

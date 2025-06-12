@@ -91,7 +91,10 @@ const Projects = () => {
 
   return (
     <div className={styles.projects}>
-      <h2 className={styles.title}>️️📚 Projects</h2>
+      <h2 className={styles.title}>
+        ️️📚 Projects{' '}
+        <span style={{ color: '#888888' }}>(click to open the app/code)</span>
+      </h2>
       <div className={styles.items}>
         {projects.length ? (
           projects.map(

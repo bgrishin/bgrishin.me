@@ -19,8 +19,8 @@ const styles = css`
 const OtherInfo = () => (
   <>
     <div className={styles.info}>
-      🏆 Contributor in crypto & health care & AI projects and an active
-      participant in non-commercial volunteer projects.
+      🏆 Contributor in big crypto & financial & health care & AI projects and
+      an active participant in non-commercial volunteer projects.
     </div>
     <div className={styles.info}>
       ⭐️ Proactive and responsible team player, never afraid to seem
