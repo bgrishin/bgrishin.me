@@ -3,5 +3,5 @@ export enum Links {
   github = 'https://github.com/bgrishin',
   telegram = 'https://t.me/quartz555',
   mailTo = 'mailto:bogdan.grishin.2007@gmail.com',
-  cv = '/cv2024.pdf'
+  cv = '/cv2025-full.pdf'
 }
